@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin-top: 1%;
+}
+
+h1:hover{
+    color: rgb(228, 79, 15);
+}
+
+body{
+    background-color: #548687;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 3px solid black; */
+}
+
+.container{
+    height: 56vh;
+    width: 32vw;
+    margin-top:4%;
+    /* border: 3px solid black; */
+    padding: 1rem;
+    border-radius: 5%;
+     box-shadow: 0 0 1rem rgba(204, 214, 142, 0.6);
+    
+}
+
+.container:hover{
+    background-color: #e4b3b9;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+   
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius:25%;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.6);
+    font-size: 8vmin;
+}
+
+
+
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e84949;
+    padding: 0.8rem 2.3rem;
+    color: aliceblue;
+    box-shadow: 5px 5px 7px 0px rgb(115, 115, 128);
+    position: relative;
+    z-index: 1;
+    font-family: cursive;
+}
+
+button::before{
+    content: "";
+    background-color: rgb(15, 84, 201);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: center;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+}
+button:hover::before{
+    transform: scale(1);
+}
+
+#banti{
+    border-radius: 25px;
+}
+
+
+#newbtn{
+    border-radius: 25px;
+    display: inline;
+}
+
+
+#msg{
+    font-size: 3rem;
+    color: honeydew;
+}
+
+
+.msgcontainer{
+    color: aquamarine;
+}
+.hide
+{
+    display: none;
+}
